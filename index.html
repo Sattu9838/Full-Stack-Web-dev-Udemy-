@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Screen sharing</title>
+</head>
+<body>       
+   <div class="box">
+    <button id="strat">Start screen share</button>                    
+    <div class="vid">
+        <video id="video" autoplay></video>
+
+    </div>
+   </div>
+   <script>
+    strat.onclick = async () =>{
+        const screen = await navigator.mediaDevices.getDisplayMedia
+        ({video:true});
+    }
+    video.srcObject = screen
+   </script>
+</body>
+</html>
